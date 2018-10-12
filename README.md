@@ -32,7 +32,7 @@ The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is
 
 ####  003F Can you build a puffer train? (0040: ...Do you know what it is?)
 
-A [puffer train](https://en.wikipedia.org/wiki/Puffer_train) is a particular type pattern in a finite automaton (like ]Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)) which spontaneously moves across the cell space, leaving smaller structures (akin to debris) behind.
+A [puffer train](https://en.wikipedia.org/wiki/Puffer_train) is a particular type pattern in a finite automaton (like [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)) which spontaneously moves across the cell space, leaving smaller structures (akin to debris) behind.
 
 Cellular automata are still a very popular pastime among hackers. Puffer trains, though, have particular cultural significance: the first known puffer train in Conway's Game of Life was discovered by [Bill Gosper](https://en.wikipedia.org/wiki/Bill_Gosper).
 
