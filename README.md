@@ -22,3 +22,9 @@ The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is
 #### 00B6 Do you have your own fortune-cookie file?
 
 [fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) is a famous Unix passtime. When invoked, it would display various funny quotes from one of several files that shipped with it or were circulated in the hacker community. Particularly dedicated hackers would, of course, have such a file of their own.
+
+#### 00C5 Do you have a programmable calculator?
+
+Programmable calculators like the [TI-59](https://en.wikipedia.org/wiki/TI-59_/_TI-58) were some of the earliest personal programmable devices. For many hackers, this would have been the first exposure to programming, and an occasional fun pastime.
+
+Some of them, like the [HP-16C](https://en.wikipedia.org/wiki/HP-16C) were primarily aimed at programmers, but many hackers came from other fields, such as Physics or various other branches of engineering, where handheld scientific calculators are nearly impossible to live without.
