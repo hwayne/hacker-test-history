@@ -18,3 +18,7 @@ The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is
 #### 00B0 Do you have a copy of Dec Wars??
 
 [DEC Wars](https://www.netfunny.com/rhf/jokes/87/14917.9.html) was a [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)-themed parody of Star Wars. It was posted on USENET, in various groups, in 1983, and was written by Alan Hastings, Steve Tarr, Dave Borman and Barak Pearlmutter.
+
+#### 00B6 Do you have your own fortune-cookie file?
+
+[fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) is a famous Unix passtime. When invoked, it would display various funny quotes from one of several files that shipped with it or were circulated in the hacker community. Particularly dedicated hackers would, of course, have such a file of their own.
