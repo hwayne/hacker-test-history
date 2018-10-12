@@ -6,6 +6,12 @@ If there's something you recognize, just make a pull request with the explanatio
 
 # [The Test](http://www.mit.edu/people/mjbauer/Purity/hackpure.html)
 
+####  0005 Have you ever patched paper tape?
+
+Paper type, also called [punched tape](https://en.wikipedia.org/wiki/Punched_tape) or perforated tape, was an early, inexpensive storage media, consisting of a long, thin strip of paper, divided into a fine grid (typically 5 or 8 columns). Each cell of this grid corresponded to one bit of information. If the grid was punched, the corresponding bit would be 1, otherwise it would be zero (or vice-versa).
+
+Since paper is inexpensive and malleable, and the reading mechanism was usually optic, it would be very easy to "patch" paper tape: one could either punch holes, or cover erroneously punched holes by gluing electric tape or pieces of paper on top of them. However, doing so was fairly tedious and error prone, and you had to find it easy to "read" and "write" binary. Furthermore, finding out exactly *which* bits to toggle in this manner usually meant being able to read machine code dumps of the code -- not an easy feat!
+
 ####  0011 Do you use DWIM to make life interesting?
 
 From the Jargon File, [DWIM] stands for "Do What I Mean", and in particular a specific tool that attempted to correct typos and spelling errors. Since general-purpose AI had not been invented at the time of the Hacker Test's creation, any automatic "correction" was as likely to be harmful as productive, thus making life "interesting" if (for example) the DWIM tool decided what you *really* meant was to delete all your files.
@@ -20,11 +26,49 @@ A precursor to [XKCD 1172](https://xkcd.com/1172/).
 
 A reference to [NetHack](https://www.nethack.org/), one of the most popular roguelikes of all time. One item is the [fruit](https://nethackwiki.com/wiki/Slime_mold), which you could configure to be whatever food you like. If you do not configure it, the default is "slime mold"
 
-
 ####  0019 Can you recite Jabberwocky?
 
 The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is a famous nonsense poem by Lewis Carroll. Most of the words are made up.
 
+####  003F Can you build a puffer train? (0040: ...Do you know what it is?)
+
+A [puffer train](https://en.wikipedia.org/wiki/Puffer_train) is a particular type pattern in a finite automaton (like ]Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)) which spontaneously moves across the cell space, leaving smaller structures (akin to debris) behind.
+
+Cellular automata are still a very popular pastime among hackers. Puffer trains, though, have particular cultural significance: the first known puffer train in Conway's Game of Life was discovered by [Bill Gosper](https://en.wikipedia.org/wiki/Bill_Gosper).
+
+#### 0041 Can you play music on your line printer? (0042 ... Your disk drive? 0043 ... Your tape drive?)
+
+The music in this case is not a metaphor: it's literal music. Devices like dot printers or disk drives used stepper motors for accurate positioning of their print heads or, respectively, disk heads. By carefully manipulating the speed and position of these motors, one could modulate their vibration so as to, quite literally, [make them sing](https://www.youtube.com/watch?v=u8I6qt_Z0Cg).
+
+Doing so required not only a pretty good understanding of electronics, programming and music, but also quite a fair deal of creativity. Printer drivers, naturally, do not natively support making printers sing, and indeed some of the sounds occur when the hardware is pushed beyond its safe (or standard) operational parameters. Consequently, creating these sounds sometimes required careful programming and a lot of trial-and-error.
+
+#### 006F Ever drop a card deck? (0070 ... Did you successfully put it back together? 0071 ... Without looking?)
+
+The card deck here does not refer to playing cards, but to [punched cards](https://en.wikipedia.org/wiki/Punched_card). Punched cards were small pieces of stiff paper or cardboard, which could be used as storage media, encoding ones and zeroes through the presence (or absence) of holes at pre-determined grid locations.
+
+The small information density (depending on format, a punched card could represent anywhere from a few characters to a few tens of bytes) meant that a single program needed tens, hundreds, or even thousands of punched cards, which would often be punched somewhere other than in the machine room, where they would be fed to the computer.
+
+Naturally, the worst thing that could happen when carrying a deck of cards across the campus was to drop it. Putting them back together in their correct order was not an easy task when you had hundreds of cards. Putting them back together without looking, just by feeling the hole pattern with your fingers -- thus reading it much like a computer would have -- was an even more impressive feat.
+
+#### 00B0 Do you have a copy of Dec Wars??
+
+[DEC Wars](https://www.netfunny.com/rhf/jokes/87/14917.9.html) was a [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)-themed parody of Star Wars. It was posted on USENET, in various groups, in 1983, and was written by Alan Hastings, Steve Tarr, Dave Borman and Barak Pearlmutter.
+
+#### 00B6 Do you have your own fortune-cookie file?
+
+[fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) is a famous Unix passtime. When invoked, it would display various funny quotes from one of several files that shipped with it or were circulated in the hacker community. Particularly dedicated hackers would, of course, have such a file of their own.
+
+#### 00C5 Do you have a programmable calculator?
+
+Programmable calculators like the [TI-59](https://en.wikipedia.org/wiki/TI-59_/_TI-58) were some of the earliest personal programmable devices. For many hackers, this would have been the first exposure to programming, and an occasional fun pastime.
+
+Some of them, like the [HP-16C](https://en.wikipedia.org/wiki/HP-16C) were primarily aimed at programmers, but many hackers came from other fields, such as Physics or various other branches of engineering, where handheld scientific calculators are nearly impossible to live without.
+
+#### 00C6 ... Is it RPN?
+
+Notably, many of these scientific calculators used [RPN notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation); in particular, HP's line of scientific calculators, which were held in highest regard, used RPN from the very beginning, starting with the [HP-35](https://en.wikipedia.org/wiki/HP-35), the first scientific handheld calculator.
+
+RPN did not become a tradition by accident or taste alone; the RPN model had a number of advantages relevant to early hardware, and implementing such a scheme in software was at the very least cleaner, if not easier. Programming languages like Lisp, Forth and PostScript used it extensively, too.
 ####  001E Do you know what ASCII stands for?
 
 The [American Standard Code for Information Interchange][ASCII] assigns a number from 0 to 127 to alphabetic, numeric and punctuation characters widely used in the United States of America, plus a variety of mostly-obsolete control characters that represent things like paragraph breaks. First standardized in 1963, it forms the basis of nearly every modern character set, including Unicode.
@@ -74,3 +118,4 @@ Sorting a list of items is a well-studied problem, and there are many sorting al
 Once upon a time, a "disk drive" was a unit about the size of a washing-machine. Like a washing machine, it involved spinning a heavy metal core at high speeds, and (like a washing machine) any imbalance of the payload could cause the unit to shake from side to side, and (under the right circumstances) rattle its way across the floor.
 
 The Jargon File [also mentions](http://www.catb.org/jargon/html/W/walking-drives.html) that certain patterns of disk accesses could cause a drive to walk.
+
