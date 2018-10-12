@@ -26,6 +26,12 @@ A [puffer train](https://en.wikipedia.org/wiki/Puffer_train) is a particular typ
 
 Cellular automata are still a very popular pastime among hackers. Puffer trains, though, have particular cultural significance: the first known puffer train in Conway's Game of Life was discovered by [Bill Gosper](https://en.wikipedia.org/wiki/Bill_Gosper).
 
+#### 0041 Can you play music on your line printer? (0042 ... Your disk drive? 0043 ... Your tape drive?)
+
+The music in this case is not a metaphor: it's literal music. Devices like dot printers or disk drives used stepper motors for accurate positioning of their print heads or, respectively, disk heads. By carefully manipulating the speed and position of these motors, one could modulate their vibration so as to, quite literally, [make them sing](https://www.youtube.com/watch?v=u8I6qt_Z0Cg).
+
+Doing so required not only a pretty good understanding of electronics, programming and music, but also quite a fair deal of creativity. Printer drivers, naturally, do not natively support making printers sing, and indeed some of the sounds occur when the hardware is pushed beyond its safe (or standard) operational parameters. Consequently, creating these sounds sometimes required careful programming and a lot of trial-and-error.
+
 #### 00B0 Do you have a copy of Dec Wars??
 
 [DEC Wars](https://www.netfunny.com/rhf/jokes/87/14917.9.html) was a [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)-themed parody of Star Wars. It was posted on USENET, in various groups, in 1983, and was written by Alan Hastings, Steve Tarr, Dave Borman and Barak Pearlmutter.
