@@ -20,6 +20,12 @@ A reference to [NetHack](https://www.nethack.org/), one of the most popular rogu
 
 The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is a famous nonsense poem by Lewis Carroll. Most of the words are made up.
 
+####  003F Can you build a puffer train? (0040: ...Do you know what it is?)
+
+A [puffer train](https://en.wikipedia.org/wiki/Puffer_train) is a particular type pattern in a finite automaton (like ]Conway's Game of Life](https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life)) which spontaneously moves across the cell space, leaving smaller structures (akin to debris) behind.
+
+Cellular automata are still a very popular pastime among hackers. Puffer trains, though, have particular cultural significance: the first known puffer train in Conway's Game of Life was discovered by [Bill Gosper](https://en.wikipedia.org/wiki/Bill_Gosper).
+
 #### 00B0 Do you have a copy of Dec Wars??
 
 [DEC Wars](https://www.netfunny.com/rhf/jokes/87/14917.9.html) was a [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)-themed parody of Star Wars. It was posted on USENET, in various groups, in 1983, and was written by Alan Hastings, Steve Tarr, Dave Borman and Barak Pearlmutter.
