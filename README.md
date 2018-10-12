@@ -28,3 +28,9 @@ The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is
 Programmable calculators like the [TI-59](https://en.wikipedia.org/wiki/TI-59_/_TI-58) were some of the earliest personal programmable devices. For many hackers, this would have been the first exposure to programming, and an occasional fun pastime.
 
 Some of them, like the [HP-16C](https://en.wikipedia.org/wiki/HP-16C) were primarily aimed at programmers, but many hackers came from other fields, such as Physics or various other branches of engineering, where handheld scientific calculators are nearly impossible to live without.
+
+#### 00C6 ... Is it RPN?
+
+Notably, many of these scientific calculators used [RPN notation](https://en.wikipedia.org/wiki/Reverse_Polish_notation); in particular, HP's line of scientific calculators, which were held in highest regard, used RPN from the very beginning, starting with the [HP-35](https://en.wikipedia.org/wiki/HP-35), the first scientific handheld calculator.
+
+RPN did not become a tradition by accident or taste alone; the RPN model had a number of advantages relevant to early hardware, and implementing such a scheme in software was at the very least cleaner, if not easier. Programming languages like Lisp, Forth and PostScript used it extensively, too.
