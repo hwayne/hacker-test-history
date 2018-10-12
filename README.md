@@ -14,3 +14,7 @@ A reference to [NetHack](https://www.nethack.org/), one of the most popular rogu
 ####  0019 Can you recite Jabberwocky?
 
 The [Jabberwocky](http://www.jabberwocky.com/carroll/jabber/jabberwocky.html) is a famous nonsense poem by Lewis Carroll. Most of the words are made up.
+
+#### 00B0 Do you have a copy of Dec Wars??
+
+[DEC Wars](https://www.netfunny.com/rhf/jokes/87/14917.9.html) was a [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation)-themed parody of Star Wars. It was posted on USENET, in various groups, in 1983, and was written by Alan Hastings, Steve Tarr, Dave Borman and Barak Pearlmutter.
