@@ -12,6 +12,29 @@ Paper type, also called [punched tape](https://en.wikipedia.org/wiki/Punched_tap
 
 Since paper is inexpensive and malleable, and the reading mechanism was usually optic, it would be very easy to "patch" paper tape: one could either punch holes, or cover erroneously punched holes by gluing electric tape or pieces of paper on top of them. However, doing so was fairly tedious and error prone, and you had to find it easy to "read" and "write" binary. Furthermore, finding out exactly *which* bits to toggle in this manner usually meant being able to read machine code dumps of the code -- not an easy feat!
 
+####  000E Ever change the value of 4?  000F ... Unintentionally?  0010 ... In a language other than Fortran?
+
+This question refers to a famous, occasionally abused (but often unintentionally hit) [pitfall in Fortran](https://www.ibiblio.org/pub/languages/fortran/ch1-8.html#01).
+
+Fortran II, introduced in 1958, supported user-written subroutines and functions, but all parameters were passed by reference, including values not bound to any variable (or constant) name. In other words, a function call like this:
+
+    READ INPUT TAPE 5, 501, IA, IB, IC
+    CALL MYFUNC(IA, IB, IC, 4)
+
+would result in code that stored the 4 at some memory location, and then passed its location to `MYFUNC`, along with references to IA, IB, and IC.
+
+MYFUNC therefore operated not on "dummy" values on the stack, as in C, but on the original values of its parameters, and any change, to any parameters, even those passed as literal values, would be reflected in the original value.
+
+Consequently, a bug in functions that used some of their parameters as output parameters could result in the wrong value being updated.
+
+Two things made matters worse though.
+
+First, many Fortran compilers ran on systems without a MMU and virtual memory support. On these systems, not only would literal values be modified, but *constants* could be modified as well.
+
+Second, most Fortran compilers would "pool and reuse" constants -- that is, store a particular, often-used value in a single memory location, and pass that wherever it was required. Thus, if MYFUNC above changed a pooled instance of 4 to 5, all other calls that passed a reference to that memory location (and therefore expected a 4) would get 5 instead.
+
+While this was definitely a source of unpleasant bugs, it could also serve as a base for some clever optimizations (or obfuscation). Particularly creative programmers would have adapted this mechanisms in languages other than Fortran, probably much to the frustration of everyone else.
+
 ####  0011 Do you use DWIM to make life interesting?
 
 From the Jargon File, [DWIM] stands for "Do What I Mean", and in particular a specific tool that attempted to correct typos and spelling errors. Since general-purpose AI had not been invented at the time of the Hacker Test's creation, any automatic "correction" was as likely to be harmful as productive, thus making life "interesting" if (for example) the DWIM tool decided what you *really* meant was to delete all your files.
