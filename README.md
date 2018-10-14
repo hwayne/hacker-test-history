@@ -218,13 +218,25 @@ Doing so required not only a pretty good understanding of electronics, programmi
 
 ####  0046 Do you have a line printer picture of...
 
+Since line printers could draw arbitrary text on large pieces of paper, they were quickly used for what we would today call [ASCII art](https://en.wikipedia.org/wiki/ASCII_art).
+
 ####  0047 ... the Mona Lisa?
+
+If you're going to adopt old images to a new medium, why not start with [the greats](http://artscene.textfiles.com/asciiart/monalisa.art)?
 
 ####  0048 ... the Enterprise?
 
+Probably the [original USS Enterprise (NCC-1701)](http://artscene.textfiles.com/asciiart/enterp.art) from the original Star Trek TV series, although by the time of the Test's publication it might also have been the Enterprise A from the Star Trek movies, or the Enterprise D from Star Trek: The Next Generation.
+
+Star Trek would have had many fans among the MIT hackers who created the Test.
+
 ####  0049 ... Einstein?
 
+[Albert Einstein](https://en.wikipedia.org/wiki/Albert_Einstein), famous physicist and hero to scientifically-inclined people everywhere.
+
 ####  004A ... Oliver?
+
+[Oliver Wendell Jones](http://artscene.textfiles.com/asciiart/oliver.art), child genius and computer hacker from the comic strip Bloom County. 
 
 ####  004B Have you ever made a line printer picture?
 
@@ -297,9 +309,13 @@ Doing so required not only a pretty good understanding of electronics, programmi
 
 ####  006C Do you solve word puzzles with an on-line dictionary?
 
-####  006D Have you ever taken a Turing test?
+####  006D Have you ever taken a Turing test? (006E ... Did you fail?)
 
-####  006E ... Did you fail?
+The [Turing test](https://en.wikipedia.org/wiki/Turing_test) was proposed by mathematician and early computer scientist Alan Turing as a practical test for artificial intelligence. A human judge is given two computer terminals: one is connected to the computer being tested, and the other is connected to another terminal in another room, where a human sits. The judge can type any message on either terminal, and must decide which terminal is talking to a computer and which terminal is talking to a human.
+
+The [Loebner Prize](https://en.wikipedia.org/wiki/Loebner_Prize) is an annual competition run in the style of Turing's test, but it was first held in 1990, the year after this Test was created.
+
+To fail a Turing test would mean an impartial observer judged your personality to be more mechanical and artificial than an actual computer.
 
 #### 006F Ever drop a card deck? (0070 ... Did you successfully put it back together? 0071 ... Without looking?)
 
@@ -319,9 +335,19 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 
 ####  0075 Ever interrupted a UPS?
 
+An [Uninterruptible Power Supply](https://en.wikipedia.org/wiki/Uninterruptible_power_supply) is basically a big battery: one end plugs into the wall to obtain regular, erratic mains power, and the other end plugs into your computer to supply pristine, smooth power to the delicate electronics. In the event of a blackout or power surge, the UPS usually gives you a few minutes to shut down the computer cleanly instead of the power cutting out suddenly.
+
 ####  0076 Ever mask an NMI?
 
+A computer's CPU normally processes instructions in a steady stream, but sometimes a higher-priority event occurs (for example, a key is pressed on the keyboard, or a timeout occurs) and the CPU is _interrupted_ so it can go handle the situation, and eventually it can go back to what it was originally doing. Sometimes if the CPU is doing something very important or timing sensitive and it needs to not be interrupted, it will temporarily _mask_ interrupts, and if any interrupt events that occur won't be processed until the CPU unmasks them again.
+
+However, some interrupts are so important they cannot be masked, they are Non Maskable Interrupts (NMIs). Usually they represent hardware failures, or some kind of "reset" button.
+
 ####  0077 Have you ever set off a Halon system?
+
+A computer data centre involves a lot of electricity and a lot of computers made from volatile substances, so the odds of an electrical fire are high. Electrical fires can't be safely extinguished with water because it conducts electricity, so the usual scheme is to have a button or lever by the door that floods the entire room with [halon gas](https://en.wikipedia.org/wiki/Halomethane#Fire_extinguishing).
+
+Setting off a halon system and refilling it is cheaper than reconstructing a burned-down data centre, but it's not cheap, and probably not something you want to do unless you can actually see flames.
 
 ####  0078 ... Intentionally?
 
@@ -355,11 +381,17 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 
 ####  0087 Ever been mentioned in Computer Recreations?
 
+Computer Recreations was a regular column about computing and mathematical puzzles and problems, published in Scientific American.
+
 ####  0088 Ever had your activities mentioned in the newspaper?
 
 ####  0089 ... Did you get away with it?
 
 ####  008A Ever engage a drum brake while the drum was spinning?
+
+[Drum memory](https://en.wikipedia.org/wiki/Drum_memory) consisted of a large metal cylinder coated in magnetic material. To read or write data, a magnetic head would be moved to the correct position along the length of the drum, and then wait for the relevant portion of the drum to pass beneath it. This meant that the faster the drum could spin, the faster the computer could access stored data, and so the drum was kept at its maximum speed as much as possible.
+
+Needless to say, engaging the brake while the drum was spinning would be _bad idea_.
 
 ####  008B Ever write comments in a non-native language?
 
@@ -367,15 +399,25 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 
 ####  008D Ever tried to improve your score on the Hacker Test?
 
-####  008E Do you take listings with you to lunch?
+####  008E Do you take listings with you to lunch? (008F ... To bed?)
 
-####  008F ... To bed?
+In the days of punch cards and paper tape, programs were not written interactively at a terminal, they were written offline, then typed into a card punch and submitted to the computer operators to be run at the next available opportunity. Eventually the operators would contact you with (if you were lucky) the completed output of your program, or (more likely) an error message. Debugging the program involved staring at a printout ("listing") of the program's source code, trying to puzzle out what went wrong.
+
+Such puzzle solving counted as "work", but particulary dedicated hackers might keep puzzling away and neglecting more important tasks like eating or sleeping.
 
 ####  0090 Ever patch a microcode bug?
+
+The instruction sets for the very first CPUs directly mapped onto the functionality available, but newer CPUs needed to be compatible with the older CPUs while adding new functionality and redesigning the implementation to be more efficient. Most modern CPUs implement their standard instruction sets by converting each incoming instruction into one or more processor-specific _micro instructions_, so they can implement a complex instruction set without dedicating silicon to each slightly-different variant of a rarely-used instruction. A CPU's _microcode_ is the complete program that executes standard instructions by converting them to micro instructions.
+
+Because microcode is so fundamental to a CPU's operation, it is very well tested by the manufacturer, and any errors tend to show up immediately so they are fixed quickly. That said, microcode bugs are not unheard of.
 
 ####  0091 ... around a microcode bug?
 
 ####  0092 Can you program a Turing machine?
+
+A [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) is a mathematical model of computation described by Alan Turing, which he used to explore what kinds of things could possibly be computed, given infinite time and resources.
+
+You can't write a program for a Turing machine the same way you could write a program for a real machine (for one thing, it doesn't have "instructions" as such, just a frustratingly large set of arbitrary "states"), but it's instructive to think about how a Turing machine might go about simple tasks like adding numbers.
 
 ####  0093 Can you convert postfix to prefix in your head?
 
@@ -383,11 +425,23 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 
 ####  0095 Do you know how to use a Kleene star?
 
+In the pattern-matching syntax of regular expressions, the Kleene star means "zero or more of the preceeding item". For example, if the pattern `ab` matches the string "ab", then the pattern `ab*` would match the strings "a", "ab", "abb", "abbb", and so forth.
+
 ####  0096 Have you ever starved while dining with philosophers?
 
-####  0097 Have you solved the halting problem?
+The [Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) is a traditional example problem used to teach concurrent algorithm design. 
 
-####  0098 ... Correctly?
+Let's say a bunch of philosophers are seated around a table. Each philosopher has plate of food in front of them, and between each pair of plates is a fork. A philosopher can be dining, in which case they need to use the both fork to their left and the fork to their right, or they can be philosophizing, in which case they put down their forks and stop eating, or they can pick up one fork and wait for the other fork to become available so they can eat. The problem is to come up with a protocol for all the philosophers to follow that allows all the philosophers to eat.
+
+For example, let's say we start off with "take the fork to your left, then wait for the fork to your right to become available". All the philosophers take the fork to their left, then wait forever because the philosopher on their right has the fork on their right and is waiting forever.
+
+A sufficiently sophisticated scheme can work, but people trying to solve the problem for the first time are often dismayed at how frequently one of their philosophers winds up starving.
+
+####  0097 Have you solved the halting problem? (0098 ... Correctly?)
+
+Given a Turing machine (that is, some kind of program) and an input for that program, feeding the input into the machine and turning it on will produce one of two results: either the machine will (eventually) finish its calculation and halt, or it will get stuck in a loop and keep calculating forever. The Halting Problem is to create a Turing machine that takes another Turing machine and its input as inputs, and figures out whether that machine will halt or loop forever, without actually running it and waiting forever to see what happens.
+
+As it turns out, Turing proved that it's not possible to solve the Halting problem, so anyone who answers "yes" to question 0097 will answer "no" to question 0098... unless they're lying.
 
 ####  0099 Ever deadlock trying eating spaghetti?
 
