@@ -178,6 +178,8 @@ That said, although an idle loop cannot run *faster*, it can run more *efficient
 
 Sorting a list of items is a well-studied problem, and there are many sorting algorithms available with various trade-offs. Bubble Sort is one of the uniformly worst-performing sorting algorithms, and any effort put towards optimizing it would be much better spent replacing it entirely with a smarter algorithm like Quick Sort.
 
+(_That said_, there are [some situations](https://cs.stackexchange.com/a/53228) where Bubble Sort is the right algorithm, in which case you should probably optimize it.)
+
 ####  0037 Does your terminal/computer talk to you?
 
 ####  0038 Have you ever talked into an acoustic modem?
@@ -306,6 +308,8 @@ The card deck here does not refer to playing cards, but to [punched cards](https
 The small information density (depending on format, a punched card could represent anywhere from a few characters to a few tens of bytes) meant that a single program needed tens, hundreds, or even thousands of punched cards, which would often be punched somewhere other than in the machine room, where they would be fed to the computer.
 
 Naturally, the worst thing that could happen when carrying a deck of cards across the campus was to drop it. Putting them back together in their correct order was not an easy task when you had hundreds of cards. Putting them back together without looking, just by feeling the hole pattern with your fingers -- thus reading it much like a computer would have -- was an even more impressive feat.
+
+In practice, this was enough of a problem that IBM sold [card sorters](http://www.columbia.edu/cu/computinghistory/sorter.html) that would put a dropped deck back in order for you.
 
 ####  0072 Have you ever used IPCS?
 
@@ -570,6 +574,8 @@ RPN did not become a tradition by accident or taste alone; the RPN model had a n
 ####  00ED Have you ever been a system administrator?
 
 ####  00EE Do you have more megabytes than megabucks?
+
+By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb, so this question's a bit of a gimme.
 
 ####  00EF Have you ever downgraded your job to upgrade your processing power?
 
