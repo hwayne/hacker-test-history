@@ -1211,19 +1211,19 @@ the blue box.
 
 Common colors of "boxes" in the phreaking community:
 
-    - black - prevent incoming calls from being billed
-    - blue - simulated a telephone operator's console
-    - green - manipulated payphones (but only from the phone called by the payphone)
-    - red - simulated the insertion of coins into a payphone
-    - beige - acted as a [lineman's handset](https://en.wikipedia.org/wiki/Lineman%27s_handset)
-    - clear - allowed the use of post-pay payphones without paying
-    - gold - allowed the bridging of two phone lines
-    - magenta - generated a ring signal (usually not used on its own)
-    - orange - [spoofs caller ID](https://en.wikipedia.org/wiki/Caller_ID_spoofing) information
-    - vermillion - a combination of a magenta and orange box
-    - violet - simulate a phone being off-hook
-    - silver - used to simulate the DTMF tones on the Defense Switched Network
-               (the now obsolete phone network used by the United States Department of Defense)
+- black - prevent incoming calls from being billed
+- blue - simulated a telephone operator's console
+- green - manipulated payphones (but only from the phone called by the payphone)
+- red - simulated the insertion of coins into a payphone
+- beige - acted as a [lineman's handset](https://en.wikipedia.org/wiki/Lineman%27s_handset)
+- clear - allowed the use of post-pay payphones without paying
+- gold - allowed the bridging of two phone lines
+- magenta - generated a ring signal (usually not used on its own)
+- orange - [spoofs caller ID](https://en.wikipedia.org/wiki/Caller_ID_spoofing) information
+- vermillion - a combination of a magenta and orange box
+- violet - simulate a phone being off-hook
+- silver - used to simulate the DTMF tones on the Defense Switched Network
+           (the now obsolete phone network used by the United States Department of Defense)
 
 The use of "colored box" terminology expanded outside the phreaking community
 to be applied to other devices that were used to manipulate systems.
