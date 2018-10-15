@@ -1190,11 +1190,91 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 ## Phreaking
 ####  01FB Have you ever built a black box?
 
+Back when telephone switches (the computers that control the telephone
+network) worked on mechanical electical relays, they would use a change
+in voltage on a phone line to determine when the phone had been picked
+up. When a phone was on-hook, the voltage would be different than when it
+was off-hook.
+
+The billing for a call would only begin when the receiver answered the
+phone by taking it off the hook. A "black box" was a simple electical
+device that, when attached to a phone, would prevent the associated drop
+in voltage and thus prevent the call from being billed.
+
 ####  01FC Can you name all of the 'colors' of boxes?
+
+There were many "colors" of boxes, like the black box above. Common ones
+included the aforementioned black box, the red box, the green box, and
+the blue box.
 
 ####  01FD ... and their associated functions?
 
+Common colors of "boxes" in the phreaking community:
+
+    - black - prevent incoming calls from being billed
+    - blue - simulated a telephone operator's console
+    - green - manipulated payphones (but only from the phone called by the payphone)
+    - red - simulated the insertion of coins into a payphone
+    - beige - acted as a [lineman's handset](https://en.wikipedia.org/wiki/Lineman%27s_handset)
+    - clear - allowed the use of post-pay payphones without paying
+    - gold - allowed the bridging of two phone lines
+    - magenta - generated a ring signal (usually not used on its own)
+    - orange - [spoofs caller ID](https://en.wikipedia.org/wiki/Caller_ID_spoofing) information
+    - vermillion - a combination of a magenta and orange box
+    - violet - simulate a phone being off-hook
+    - silver - used to simulate the DTMF tones on the Defense Switched Network
+               (the now obsolete phone network used by the United States Department of Defense)
+
+The use of "colored box" terminology expanded outside the phreaking community
+to be applied to other devices that were used to manipulate systems.
+For example, the "chrome box" was used to manipulate traffic signals
+("traffic lights").
+
 ####  01FE Does your touch tone phone have 16 DTMF buttons on it?
 
-####  01FF Did the breakup of MaBell create more opportunities for you?
+DTMT is "Dual-Tone Multi-Frequency", and is the mechanism by which
+"touch-tone" phones originally operated. The buttons on a phone were arranged
+in a grid pattern; consumer phones had four rows and three columns. When
+pressed, two tones (corresponding to the row and the column pushed) would
+be generated. The telephone switch (the computer responsible for connecting
+phones to the phone network) would recognize these tones as numbers and
+other symbols and complete the call.
 
+Operator sets (that is, phone keypads used by operators of the telephone
+network) had an additional four buttons, meaning sixteen total. These
+four buttons produced additional tones that were recognized by telephone
+switches and performed special operator-only functions like initiating
+free long-distance calls to other stations.
+
+The phone network for many years solely used [in-band
+signalling](https://en.wikipedia.org/wiki/In-band_signaling) and as a result,
+anyone who could generate the appropriate tones could act as "operators"
+on the phone network.
+
+The phone network eventually evolved to not recognize
+certain tones on certain lines, meaning that this practice
+came to an end. Essentially all telephone networks today use [out-of-band
+signalling](https://en.wikipedia.org/wiki/Signaling_%28telecommunications%29#In-band_versus_out-of-band_signaling),
+meaning that similar tricks today cannot work.
+
+####  01FF Did the breakup of Ma Bell create more opportunities for you?
+
+"Ma Bell" ("ma" meaning "mother" in this case) was an
+affectionate nickname for the [American Telephone and Telegraph
+Company](https://en.wikipedia.org/wiki/AT%26T_Corporation), which was the
+final corporate identity of the original National Bell Telephone Company
+(itself a merger between the Bell Telphone Company and the New England
+Telephone and Telegraph Company).
+
+AT&T owned and operated many interlinked regional telephone companies
+(referred to as the "Bell System") in the United States and Canada. These
+companies together held a practical monopoly on phone service in the United
+States and Canada for most of the 20th Century.
+
+In 1974, the United States federal government opened an investigation into
+AT&T's monopolistic practices. After a decade in court, AT&T settled with
+the government and split itself into seven Regional Bell Operating Companies
+(RBOCs), themselves affectionally known as "Baby Bells".
+
+(Funnily enough, four of the original seven Baby Bells were eventually
+**re**acquired by AT&T over the course of the 90's and early 2000's.)
