@@ -1153,11 +1153,65 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 ## Usenet
 ####  01E9 Do you read news?
 
+"News" or "Netnews" is (but, sadly, mostly *was*) a worldwide collection of
+"bulletin-board" style discussion system.  Discussions were organized into
+conversations and conservations were organized into various *newsgroups*.
+
+Different sites (usually, large shared computers) would
+transfer collections of conversations among each other using the
+Unix-to-Unix Copy ([UUCP](https://en.wikipedia.org/wiki/UUCP))
+mechanism and, later, the Network News Transfer Protocol
+([NNTP](https://en.wikipedia.org/wiki/Network_News_Transfer_Protocol)).
+
+(Other mechanisms, like the venerable
+[FidoNet](https://en.wikipedia.org/wiki/FidoNet), were also used, but
+more rarely.)
+
+News was usually distributed on a site-by-site basis: one site would connect
+to another, transfer all of its new articles, and then disconnect. The
+called site would then call other sites and distribute the news, and so on
+
+(Other mechanisms, like the venerable
+[FidoNet](https://en.wikipedia.org/wiki/FidoNet), were also used, but
+more rarely.)
+
+News was usually distributed on a site-by-site basis: one site would connect
+to another, transfer all of its new articles, and then disconnect. The
+called site would then call other sites and distribute the news, and so on.
+
+Newsgroups were organized into a hierarchy, with names like
+"comp.lang.python" for Python programming language-related
+discussions. When the Internet became more open, many newsgroups
+were renamed in an action that became known as [The Great
+Renaming](http://www.catb.org/jargon/html/G/Great-Renaming.html).
+
+The collection of all sites that participated in the distribution
+of public netnews became known as "Usenet".  Usenet was
+distinct from (though it connected with at some points) the
+[ARPANET](https://en.wikipedia.org/wiki/ARPANET). Unlike the ARPANET (and
+the nascent Internet at the time), Usenet was ostensibly open to the public:
+all that was required was one of the sites let you connect and transfer
+news articles.
+
+Usenet was the first taste of what would become "the Internet" for many
+people, and originated many terms that are still in use today: "spam",
+"flame", and "FAQ".
+
 ####  01EA ... More than 32 newsgroups?
+
+Users could subscribe to as many newsgroups as they liked.  In the early
+days of Usenet, 32 would not be considered an unsual number, but after
+the rise of the Internet, 32 might be considered "a lot".
 
 ####  01EB ... More than 256 newsgroups?
 
+256 newsgroups would be a lot of newsgroups at any point in history.
+
 ####  01EC ... All the newsgroups?
+
+Unless you were acting as a distribution site, archivist, aggregator,
+or are [KIBO](http://www.catb.org/jargon/html/K/KIBO.html) himself, it
+would be unusual to subscribe to *all* the newsgroups.
 
 ####  01ED Have you ever posted an article?
 
