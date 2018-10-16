@@ -868,6 +868,30 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 
 ####  015F Have you ever made a "flippy" disk?
 
+The standard [5.25" floppy
+disk](http://www.obsoletemedia.org/5-25-inch-minifloppy-disk/) (called a
+"minifloppy" at the time, to distinguish it from the larger 8" disks that
+preceeded it) could be *single-sided* or *double-sided*.
+
+A single-sided disk could be read and written only on one side, while a
+double-sided disk could be read and written on both sides.  (If the drive
+itself didn't have two read/write heads, you'd have to actually take the
+disk out and flip it over to read the other side.)
+
+Disks were expensive in those days, and single-sided disks were often
+significantly cheaper than double-sided ones.  However, it was often possible
+to convert a single-sided disk to a double-sided one by the simple expedient
+of cutting out a notch on the other side of the disk sleeve.
+
+These notches were used to tell the drive whether or not the disk was
+writable.  For a single-sided disk, there was only one notch, so when it
+was flipped over, the disk could not be written to.
+
+A "flippy" disk was simply a single-sided floppy disk that had an extra notch
+cut out on the other side, effectively converting it to a double-sided disk.
+This could be a real money-saver, provided you didn't accidentally cut
+the disk itself while you were cutting out the new notch...
+
 ####  0160 Have you ever recovered data from a damaged disk?
 
 ####  0161 Ever boot a naked floppy?
