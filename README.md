@@ -251,10 +251,41 @@ This was in contrast to a SASD - a *Sequential* Access Storage Device,
 which could only have its data accessed sequentially. These were usually
 things like paper or magnetic tape.
 
-
 ####  004E ... Emacs
 
+"Emacs" stands for "**E**ditor **MAC**ro**S**".
+
+This is because Emacs started out as a collection of macros for the
+[TECO](https://en.wikipedia.org/wiki/TECO_%28text_editor%29).  TECO was an
+incredibly versatile and complex text editing system, with a Turing-complete
+macro language that used every single available character.
+
+Emacs was eventually rewritten, with TECO replaced by C and Lisp, but the
+name lived on.
+
 ####  004F ... ITS
+
+ITS stands for the **I**ncompatible **T**imesharing **S**ystem.
+
+[ITS](https://en.wikipedia.org/wiki/Incompatible_Timesharing_System)
+was an incredibly influential operating system for DEC's 36-bit PDP-6 and
+PDP-10 minicomputers.
+
+It was developed mostly by members of MIT's Artificial
+Intelligence Laboratory as a rejection of the then-current
+[Multics](https://en.wikipedia.org/wiki/Multics) project. (Where Multics
+was large, written mostly in a high-level language, and contained strict
+security features, ITS was small, written in assembly, and was permissive
+to the point of anarchy.)
+
+ITS was never widely deployed, but many early hackers were ITS users and
+many ITS machines were connected to the early ARPANET and thus it left a
+long shadow.  It was the birthplace of Emacs, Scheme, and device-independent
+terminal output, among many other innovations taken for granted today.
+
+Its name was a pun on that of the earlier [Compatible Time-Sharing
+System](https://en.wikipedia.org/wiki/Compatible_Time-Sharing_System),
+with which it shares no code.
 
 ####  0050 ... RSTS/E
 
