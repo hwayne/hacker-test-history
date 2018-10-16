@@ -244,6 +244,14 @@ Star Trek would have had many fans among the MIT hackers who created the Test.
 
 ####  004D ... DASD
 
+"**D**irect **A**ccess **S**torage **D**evice" is an IBMism for a disk drive,
+reflecting the fact that any part of the disk may be accessed directly.
+
+This was in contrast to a SASD - a *Sequential* Access Storage Device,
+which could only have its data accessed sequentially. These were usually
+things like paper or magnetic tape.
+
+
 ####  004E ... Emacs
 
 ####  004F ... ITS
