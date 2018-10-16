@@ -1255,15 +1255,11 @@ phone by taking it off the hook. A "black box" was a simple electical
 device that, when attached to a phone, would prevent the associated drop
 in voltage and thus prevent the call from being billed.
 
-####  01FC Can you name all of the 'colors' of boxes?
+####  01FC Can you name all of the 'colors' of boxes? (01FD ... and their associated functions?)
 
-There were many "colors" of boxes, like the black box above. Common ones
-included the aforementioned black box, the red box, the green box, and
-the blue box.
-
-####  01FD ... and their associated functions?
-
-Common colors of "boxes" in the phreaking community:
+Other devices were often constructed to manipulate the phone network.
+By analogy with the black box above, they were often named after colors.
+Common colors of "boxes" in the phreaking community included:
 
 - black - prevent incoming calls from being billed
 - blue - simulated a telephone operator's console
@@ -1273,11 +1269,13 @@ Common colors of "boxes" in the phreaking community:
 - clear - allowed the use of post-pay payphones without paying
 - gold - allowed the bridging of two phone lines
 - magenta - generated a ring signal (usually not used on its own)
-- orange - [spoofs caller ID](https://en.wikipedia.org/wiki/Caller_ID_spoofing) information
+- orange - [spoofs caller ID](https://en.wikipedia.org/wiki/Caller_ID_spoofing)
+           information
 - vermillion - a combination of a magenta and orange box
 - violet - simulate a phone being off-hook
 - silver - used to simulate the DTMF tones on the Defense Switched Network
-           (the now obsolete phone network used by the United States Department of Defense)
+           (the now obsolete phone network used by the United States
+            Department of Defense)
 
 The use of "colored box" terminology expanded outside the phreaking community
 to be applied to other devices that were used to manipulate systems.
