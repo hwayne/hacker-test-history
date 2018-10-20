@@ -18,7 +18,7 @@ If there's something you recognize, just make a pull request with the explanatio
 
 ####  0005 Have you ever patched paper tape?
 
-Paper type, also called [punched tape](https://en.wikipedia.org/wiki/Punched_tape) or perforated tape, was an early, inexpensive storage media, consisting of a long, thin strip of paper, divided into a fine grid (typically 5 or 8 columns). Each cell of this grid corresponded to one bit of information. If the grid was punched, the corresponding bit would be 1, otherwise it would be zero (or vice-versa).
+Paper tape, also called [punched tape](https://en.wikipedia.org/wiki/Punched_tape) or perforated tape, was an early, inexpensive storage media, consisting of a long, thin strip of paper, divided into a fine grid (typically 5 or 8 columns). Each cell of this grid corresponded to one bit of information. If the grid was punched, the corresponding bit would be 1, otherwise it would be zero (or vice-versa).
 
 Since paper is inexpensive and malleable, and the reading mechanism was usually optic, it would be very easy to "patch" paper tape: one could either punch holes, or cover erroneously punched holes by gluing electric tape or pieces of paper on top of them. However, doing so was fairly tedious and error prone, and you had to find it easy to "read" and "write" binary. Furthermore, finding out exactly *which* bits to toggle in this manner usually meant being able to read machine code dumps of the code -- not an easy feat!
 
