@@ -152,6 +152,10 @@ As well being more difficult to attempt (there are lots of ways to edit a file o
 
 ####  002E Have you ever used program overlays?
 
+Normally, when a program runs, the entire thing is loaded into memory where the CPU can get at it. However, a very large program might not fit into the computer's memory, especially if the program also needs to work with a large amount of data. "Overlays" are one solution to this problem: divide the program into smaller chunks, and have the "main" program unload one chunk and load another when it's needed. This works best with programs that have different modes of operation, like a game with a "strategy" phase and a "tactics" phase, or an office suite with a "word processor" mode and a "spreadsheet" mode.
+
+Most operating systems only provide a way to run a single, entire program at once, so an overlay system is much more complex, and often involves doing a lot of work the operating system would normally do on your behalf.
+
 ####  002F Have you met any IBM vice-president?
 
 ####  0030 Do you know Dennis, Bill, or Ken?
