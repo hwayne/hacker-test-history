@@ -200,9 +200,11 @@ A "modem" (short for "modulator/demodulator") is a device that can turn a digita
 
 Talking into an acoustic modem is easy, if you can find one, but not very useful.
 
-####  003A Can you whistle 300 baud?
+####  003A Can you whistle 300 baud?  (003B ... 1200 baud?)
 
-####  003B ... 1200 baud?
+When two modems connect to each other, they play [a particular pattern of tones](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html) and listen for that same pattern, to verify that the other end is also a modem, and is speaking a compatible dialect. The tones for the original modem protocol (300 baud) are the simplest, and might plausibly be possible for a skilled human to replicate.
+
+[Baud](https://en.wikipedia.org/wiki/Baud) is a measurement of communication speed, expressed as symbols per second. A communication at 300 baud means 300 changes to the signal being sent per second, so it's not practical for a human to reproduce actual 300 baud communications.
 
 ####  003C Can you whistle a telephone number?
 
