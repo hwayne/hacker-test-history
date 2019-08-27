@@ -208,6 +208,10 @@ When two modems connect to each other, they play [a particular pattern of tones]
 
 ####  003C Can you whistle a telephone number?
 
+[Dual-Tone Multi-Frequency signalling](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) is a way for a telephone to communicate to a telephone exchange. On a 4x4 keypad, a particular frequency is associated with each row and column, so pressing a particular key plays the tones associated with the row and column it appears in. On most consumer equipment, the last column of the keypad is omitted, leaving only the 10 digits, `*` and `#`.
+
+The various tones required by DTMF signalling are all within the range of human speech (because they must be transmitted over telephone lines), and humans [can sing chords](https://en.wikipedia.org/wiki/Overtone_singing), so it's at least theoretically possible to whistle a telephone number.
+
 ####  003D Have you witnessed a disk crash?
 
 ####  003E Have you made a disk drive "walk"?
