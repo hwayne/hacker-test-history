@@ -128,6 +128,8 @@ On a computer that can process at most 32 bits of data at a time, those 32 bits 
 
 ####  0026 Ever define your own numerical type to get better precision?
 
+If you want to work with numbers larger than maxint, one approach is to treat regular machine integers as "digits", store numbers as a sequence of those digits, and teach your computer how to add, subtract, multiply and divide those numbers using the traditional "longhand" algorithms. This is much, much slower than using your computer's normal arithmetic functions, but it means you can operate precisely on numbers as large as available memory.
+
 ####  0027 Can you name powers of two up to 2**16 in arbitrary order?
 
 ####  0028 ... up to 2**32?
