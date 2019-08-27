@@ -142,7 +142,13 @@ If you want to work with numbers larger than maxint, one approach is to treat re
 
 ####  002C Have you ever patched binary code?
 
+Computer programs are hugely complex, with many small details that need to kept consistent in thousands or millions of places. Unsurprisingly, computer programmers fairly quickly taught computers themselves to keep track of those details, so a program could be written in a "high level", human-friendly format (the "source code"), and then automatically converted to the "low-level" format the machine could understand. Typically, the high-level format is a text file with readable English keywords like "if" and "while", and the low-level format is a sequence of instructions represented by numbers stored as binary.
+
+When a problem is found in a program, the sensible thing to do is to modify the high-level version, and reconvert it to the low-level format. Unfortunately, that's not always possible - sometimes, the original source is lost, or destroyed, or illegal to distribute - and so it is necessary to modify the binary directly. This is massively more difficult than modifying the source, since the program is in a very different format, and because a change in one place might require many changes in other places to keep things consistent, changes that would ordinarily be handled automatically during the conversion process.
+
 ####  002D ... While the program was running?
+
+As well being more difficult to attempt (there are lots of ways to edit a file on disk, editing a program in memory sometimes isn't even possible), this is more difficult to get right. If you edit a program on disk, the modified version only needs to be consistent with itself, since a running program will either be the original or the modified version. If you edit a program as it's running, the program is a combination of the two, so it the original and modified versions need to be compatible with themselves and with each other.
 
 ####  002E Have you ever used program overlays?
 
