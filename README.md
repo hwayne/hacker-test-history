@@ -194,9 +194,11 @@ Sorting a list of items is a well-studied problem, and there are many sorting al
 
 ####  0037 Does your terminal/computer talk to you?
 
-####  0038 Have you ever talked into an acoustic modem?
+####  0038 Have you ever talked into an acoustic modem? (0039 ... Did it answer?)
 
-####  0039 ... Did it answer?
+A "modem" (short for "modulator/demodulator") is a device that can turn a digital signal into an analogue waveform and back. When two computers need to communicate, but they are too far apart to be connected directly, they can be connected to modems wired up to the telephone network, and talk to each other like an ordinary human conversation. However, prior to 1984, when Bell Systems held a monopoly in the United States, they didn't allow unauthorised equipment to be wired up to the telephone network. Instead, an acoustic modem had a little speaker and a little microphone; a human would dial the telephone number of a computer on an ordinary phone, then attach the phone handset to the acoustic modem so the computer could communicate.
+
+Talking into an acoustic modem is easy, if you can find one, but not very useful.
 
 ####  003A Can you whistle 300 baud?
 
