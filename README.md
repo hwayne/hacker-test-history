@@ -470,9 +470,13 @@ In the pattern-matching syntax of regular expressions, the Kleene star means "ze
 
 The [Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) is a traditional example problem used to teach concurrent algorithm design. 
 
-Let's say a bunch of philosophers are seated around a table. Each philosopher has plate of food in front of them, and between each pair of plates is a fork. A philosopher can be dining, in which case they need to use the both fork to their left and the fork to their right, or they can be philosophizing, in which case they put down their forks and stop eating, or they can pick up one fork and wait for the other fork to become available so they can eat. The problem is to come up with a protocol for all the philosophers to follow that allows all the philosophers to eat.
+Let's say a bunch of philosophers are seated around a table. Each philosopher has plate of spaghetti in front of them, and between each pair of plates is a chopstick. A philosopher can be doing one of a few things:
 
-For example, let's say we start off with "take the fork to your left, then wait for the fork to your right to become available". All the philosophers take the fork to their left, then wait forever because the philosopher on their right has the fork on their right and is waiting forever.
+  - philosophizing, in which case they put down their chopsticks, making them available for the philosophers to their left and right
+  - waiting, either for any chopstick to become avalable, or (if they already have one) for the other chopstick to become available
+  - eating, once they have two chopsticks
+
+The problem is to come up with a protocol for all the philosophers to follow that allows all the philosophers to eat. For example, let's say we use the rule "take the chopstick to your left, then wait for the chopstick to your right to become available". All the philosophers take the chopstick to their left, then wait forever because the philosopher on their right has the chopstick on their right and is waiting forever.
 
 A sufficiently sophisticated scheme can work, but people trying to solve the problem for the first time are often dismayed at how frequently one of their philosophers winds up starving.
 
@@ -483,6 +487,10 @@ Given a Turing machine (that is, some kind of program) and an input for that pro
 As it turns out, Turing proved that it's not possible to solve the Halting problem, so anyone who answers "yes" to question 0097 will answer "no" to question 0098... unless they're lying.
 
 ####  0099 Ever deadlock trying eating spaghetti?
+
+See question 0096.
+
+A "deadlock" is when two or more actors are prevented from making progress because they are each waiting for a resource another actor is using. The example from question 0096, where each philosopher takes the chopstick on their left and waits forever for the chopstick on their right, is an example of a deadlock.
 
 ####  009A Ever written a self-reproducing program?
 
