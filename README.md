@@ -128,6 +128,8 @@ On a computer that can process at most 32 bits of data at a time, those 32 bits 
 
 ####  0026 Ever define your own numerical type to get better precision?
 
+If you want to work with numbers larger than maxint, one approach is to treat regular machine integers as "digits", store numbers as a sequence of those digits, and teach your computer how to add, subtract, multiply and divide those numbers using the traditional "longhand" algorithms. This is much, much slower than using your computer's normal arithmetic functions, but it means you can operate precisely on numbers as large as available memory.
+
 ####  0027 Can you name powers of two up to 2**16 in arbitrary order?
 
 ####  0028 ... up to 2**32?
@@ -140,9 +142,19 @@ On a computer that can process at most 32 bits of data at a time, those 32 bits 
 
 ####  002C Have you ever patched binary code?
 
+Computer programs are hugely complex, with many small details that need to kept consistent in thousands or millions of places. Unsurprisingly, computer programmers fairly quickly taught computers themselves to keep track of those details, so a program could be written in a "high level", human-friendly format (the "source code"), and then automatically converted to the "low-level" format the machine could understand. Typically, the high-level format is a text file with readable English keywords like "if" and "while", and the low-level format is a sequence of instructions represented by numbers stored as binary.
+
+When a problem is found in a program, the sensible thing to do is to modify the high-level version, and reconvert it to the low-level format. Unfortunately, that's not always possible - sometimes, the original source is lost, or destroyed, or illegal to distribute - and so it is necessary to modify the binary directly. This is massively more difficult than modifying the source, since the program is in a very different format, and because a change in one place might require many changes in other places to keep things consistent, changes that would ordinarily be handled automatically during the conversion process.
+
 ####  002D ... While the program was running?
 
+As well being more difficult to attempt (there are lots of ways to edit a file on disk, editing a program in memory sometimes isn't even possible), this is more difficult to get right. If you edit a program on disk, the modified version only needs to be consistent with itself, since a running program will either be the original or the modified version. If you edit a program as it's running, the program is a combination of the two, so it the original and modified versions need to be compatible with themselves and with each other.
+
 ####  002E Have you ever used program overlays?
+
+Normally, when a program runs, the entire thing is loaded into memory where the CPU can get at it. However, a very large program might not fit into the computer's memory, especially if the program also needs to work with a large amount of data. "Overlays" are one solution to this problem: divide the program into smaller chunks, and have the "main" program unload one chunk and load another when it's needed. This works best with programs that have different modes of operation, like a game with a "strategy" phase and a "tactics" phase, or an office suite with a "word processor" mode and a "spreadsheet" mode.
+
+Most operating systems only provide a way to run a single, entire program at once, so an overlay system is much more complex, and often involves doing a lot of work the operating system would normally do on your behalf.
 
 ####  002F Have you met any IBM vice-president?
 
@@ -182,15 +194,23 @@ Sorting a list of items is a well-studied problem, and there are many sorting al
 
 ####  0037 Does your terminal/computer talk to you?
 
-####  0038 Have you ever talked into an acoustic modem?
+####  0038 Have you ever talked into an acoustic modem? (0039 ... Did it answer?)
 
-####  0039 ... Did it answer?
+A "modem" (short for "modulator/demodulator") is a device that can turn a digital signal into an analogue waveform and back. When two computers need to communicate, but they are too far apart to be connected directly, they can be connected to modems wired up to the telephone network, and talk to each other like an ordinary human conversation. However, prior to 1984, when Bell Systems held a monopoly in the United States, they didn't allow unauthorised equipment to be wired up to the telephone network. Instead, an acoustic modem had a little speaker and a little microphone; a human would dial the telephone number of a computer on an ordinary phone, then attach the phone handset to the acoustic modem so the computer could communicate.
 
-####  003A Can you whistle 300 baud?
+Talking into an acoustic modem is easy, if you can find one, but not very useful.
 
-####  003B ... 1200 baud?
+####  003A Can you whistle 300 baud?  (003B ... 1200 baud?)
+
+When two modems connect to each other, they play [a particular pattern of tones](https://www.windytan.com/2012/11/the-sound-of-dialup-pictured.html) and listen for that same pattern, to verify that the other end is also a modem, and is speaking a compatible dialect. The tones for the original modem protocol (300 baud) are the simplest, and might plausibly be possible for a skilled human to replicate.
+
+[Baud](https://en.wikipedia.org/wiki/Baud) is a measurement of communication speed, expressed as symbols per second. A communication at 300 baud means 300 changes to the signal being sent per second, so it's not practical for a human to reproduce actual 300 baud communications.
 
 ####  003C Can you whistle a telephone number?
+
+[Dual-Tone Multi-Frequency signalling](https://en.wikipedia.org/wiki/Dual-tone_multi-frequency_signaling) is a way for a telephone to communicate to a telephone exchange. On a 4x4 keypad, a particular frequency is associated with each row and column, so pressing a particular key plays the tones associated with the row and column it appears in. On most consumer equipment, the last column of the keypad is omitted, leaving only the 10 digits, `*` and `#`.
+
+The various tones required by DTMF signalling are all within the range of human speech (because they must be transmitted over telephone lines), and humans [can sing chords](https://en.wikipedia.org/wiki/Overtone_singing), so it's at least theoretically possible to whistle a telephone number.
 
 ####  003D Have you witnessed a disk crash?
 
@@ -470,9 +490,13 @@ In the pattern-matching syntax of regular expressions, the Kleene star means "ze
 
 The [Dining Philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem) is a traditional example problem used to teach concurrent algorithm design. 
 
-Let's say a bunch of philosophers are seated around a table. Each philosopher has plate of food in front of them, and between each pair of plates is a fork. A philosopher can be dining, in which case they need to use the both fork to their left and the fork to their right, or they can be philosophizing, in which case they put down their forks and stop eating, or they can pick up one fork and wait for the other fork to become available so they can eat. The problem is to come up with a protocol for all the philosophers to follow that allows all the philosophers to eat.
+Let's say a bunch of philosophers are seated around a table. Each philosopher has plate of spaghetti in front of them, and between each pair of plates is a chopstick. A philosopher can be doing one of a few things:
 
-For example, let's say we start off with "take the fork to your left, then wait for the fork to your right to become available". All the philosophers take the fork to their left, then wait forever because the philosopher on their right has the fork on their right and is waiting forever.
+  - philosophizing, in which case they put down their chopsticks, making them available for the philosophers to their left and right
+  - waiting, either for any chopstick to become avalable, or (if they already have one) for the other chopstick to become available
+  - eating, once they have two chopsticks
+
+The problem is to come up with a protocol for all the philosophers to follow that allows all the philosophers to eat. For example, let's say we use the rule "take the chopstick to your left, then wait for the chopstick to your right to become available". All the philosophers take the chopstick to their left, then wait forever because the philosopher on their right has the chopstick on their right and is waiting forever.
 
 A sufficiently sophisticated scheme can work, but people trying to solve the problem for the first time are often dismayed at how frequently one of their philosophers winds up starving.
 
@@ -483,6 +507,10 @@ Given a Turing machine (that is, some kind of program) and an input for that pro
 As it turns out, Turing proved that it's not possible to solve the Halting problem, so anyone who answers "yes" to question 0097 will answer "no" to question 0098... unless they're lying.
 
 ####  0099 Ever deadlock trying eating spaghetti?
+
+See question 0096.
+
+A "deadlock" is when two or more actors are prevented from making progress because they are each waiting for a resource another actor is using. The example from question 0096, where each philosopher takes the chopstick on their left and waits forever for the chopstick on their right, is an example of a deadlock.
 
 ####  009A Ever written a self-reproducing program?
 
