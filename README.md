@@ -214,6 +214,10 @@ The various tones required by DTMF signalling are all within the range of human 
 
 ####  003D Have you witnessed a disk crash?
 
+Old magnetic disk drives didn't have automatic protection against the head falling onto the platter.
+Such an event could leave a deep scratch on a platter and render it unusable. It also made a distinctive and scary sound.
+Also known as a [head crash](https://en.wikipedia.org/wiki/Head_crash).
+
 ####  003E Have you made a disk drive "walk"?
 
 Once upon a time, a "disk drive" was a unit about the size of a washing-machine. Like a washing machine, it involved spinning a heavy metal core at high speeds, and (like a washing machine) any imbalance of the payload could cause the unit to shake from side to side, and (under the right circumstances) rattle its way across the floor.
@@ -311,6 +315,8 @@ with which it shares no code.
 
 ####  0051 ... SNA
 
+[Systems Network Architecture](https://en.wikipedia.org/wiki/IBM_Systems_Network_Architecture), a proprietary protocol stack from the pre-Internet era.
+
 ####  0052 ... Spool
 
 ####  0053 ... TCP/IP
@@ -340,6 +346,8 @@ with which it shares no code.
 ####  005E ... the X windowing system?
 
 ####  005F ... CICS?
+
+[CICS](https://www.ibm.com/it-infrastructure/z/cics) is a transaction processing framework for IBM mainframes.
 
 ####  0060 Have you ever received a Fax or a photocopy of a floppy?
 
@@ -456,6 +464,8 @@ Needless to say, engaging the brake while the drum was spinning would be _bad id
 
 ####  008C Ever physically destroy equipment from software?
 
+It may sound funny now, but back in the days hardware wasn't as smart and it was possible to physically damage certain CRT displays by switching them into unusual modes, for example.
+
 ####  008D Ever tried to improve your score on the Hacker Test?
 
 ####  008E Do you take listings with you to lunch? (008F ... To bed?)
@@ -469,6 +479,8 @@ Such puzzle solving counted as "work", but particulary dedicated hackers might k
 The instruction sets for the very first CPUs directly mapped onto the functionality available, but newer CPUs needed to be compatible with the older CPUs while adding new functionality and redesigning the implementation to be more efficient. Most modern CPUs implement their standard instruction sets by converting each incoming instruction into one or more processor-specific _micro instructions_, so they can implement a complex instruction set without dedicating silicon to each slightly-different variant of a rarely-used instruction. A CPU's _microcode_ is the complete program that executes standard instructions by converting them to micro instructions.
 
 Because microcode is so fundamental to a CPU's operation, it is very well tested by the manufacturer, and any errors tend to show up immediately so they are fixed quickly. That said, microcode bugs are not unheard of.
+
+Many big iron machines such as DEC PDP-10 came with a micro-assembler and the microcode source, so patching bugs and adding new instructions wasn't unheard of either.
 
 ####  0091 ... around a microcode bug?
 
@@ -506,6 +518,8 @@ Given a Turing machine (that is, some kind of program) and an input for that pro
 
 As it turns out, Turing proved that it's not possible to solve the Halting problem, so anyone who answers "yes" to question 0097 will answer "no" to question 0098... unless they're lying.
 
+That said, solving the halting problem for a _specific program_ or class of programs rather than an arbitrary program is possible and may be necessary to prove that it always finishes in finite time (e.g. that a mission critical system doesn't hang).
+
 ####  0099 Ever deadlock trying eating spaghetti?
 
 See question 0096.
@@ -528,6 +542,10 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00A1 Ever speed up a system by removing a jumper?
 
+Before hardware auto-discovery (ala Plug'n'Play) was common, users often had to use [jumpers](https://en.wikipedia.org/wiki/Jumper_(computing)) to configure their mainboards, disk drives etc. to use specific interrupts, modes and so on.
+
+Most of the time wrong arrangement of jumpers simply rendered a peripheral or the whole system unusable rather than just slow though.
+
 ## Do you know...
 ####  00A2 Do you know who wrote Rogue?
 
@@ -537,11 +555,15 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00A5 Do you know what HCF means?
 
+[Halt and Catch Fire](http://www.catb.org/jargon/html/H/HCF.html), a CPU instruction useful for question 008C.
+
 ####  00A6 ... Ever use it?
 
 ####  00A7 ... Intentionally?
 
 ####  00A8 Do you know what a lace card is?
+
+A punched card with every hole punched. Such cards would sometimes cause the reader to jam.
 
 ####  00A9 ... Ever make one?
 
@@ -568,6 +590,8 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 ####  00B3 ... Did you contribute to it?
 
 ####  00B4 Do you have a flowchart template?
+
+A stencil for quckly drawing flowchart shaped on paper. Like [this](http://ferretronix.com/march/ibm_publications/ibm_flowchart_template_1.jpg).
 
 ####  00B5 ... Is it unused?
 
@@ -808,9 +832,13 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 
 ####  0121 Do you understand 3270 data streams?
 
+IBM 3270 was a block-oriented rather than a character-oriented video terminal, much harder to communicate with than a VT100.
+
 ####  0122 Do you know what the VM privilege classes are?
 
 ####  0123 Have you IPLed an IBM off the tape drive?
+
+IPL = Initial Program Loader, the mainframe for a bootloader. You can experience it for yourself in the [Hercules](http://www.hercules-390.org/) emulator.
 
 ####  0124 ... off a card reader?
 
@@ -849,6 +877,8 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 
 ####  0135 ... Can you recite a Nicklaus Wirth joke?
 
+A well-known one: "you can call me by name, Niklaus Wirth, or by value, Nickels Worth".
+
 ####  0136 Do you know Algol-60?
 
 ####  0137 ... Algol-W?
@@ -856,6 +886,8 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 ####  0138 ... Algol-68?
 
 ####  0139 ... Do you understand the Algol-68 report?
+
+Algol-68 is a vastly more complex language than the simple Algol-60. That report is a _long_ read.
 
 ####  013A ... Do you like two-level grammars?
 
@@ -1002,11 +1034,19 @@ the disk itself while you were cutting out the new notch...
 
 ####  0173 ... VM/CMS?
 
+Known as [z/VM](https://www.ibm.com/it-infrastructure/z/zvm) now. Originally it included the hypervisor (VM) and a small, single-user guest OS named CMS (Conversational Monitor System). A CMS virtual machine would be spawned for every user who logged in, much like Virtual Desktop Infrastructure solutions today.
+
 ####  0174 ... VMS?
+
+Known as OpenVMS now. A VAX version can run in the [SIMH](http://simh.trailing-edge.com/).
 
 ####  0175 ... MVS?
 
+Known as [z/OS](https://en.wikipedia.org/wiki/Z/OS) these days. MVS 3.8j is available free of charge and runs in Hercules.
+
 ####  0176 ... VSE?
+
+Also known as DOS/360 at some point. A mainframe OS for people who couldn't afford MVS. Still exists as [z/VSE](https://www.ibm.com/it-infrastructure/z/zvse).
 
 ####  0177 ... RSTS/E?
 
@@ -1117,6 +1157,8 @@ the disk itself while you were cutting out the new notch...
 ####  01AB ... "bletch"?
 
 ####  01AC Do you use the "P convention"?
+
+Common Lisp and some other languages use the "p" suffix for predicates, e.g. `(numberp 42)`. Newer lisps like Scheme and Clojure usually go with more intuitive "?" instead, like `(string? "foo")`.
 
 ####  01AD Do you automatically respond to any user question with RTFM?
 
