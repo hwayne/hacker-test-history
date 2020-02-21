@@ -71,6 +71,10 @@ From the Jargon File, [DWIM] stands for "Do What I Mean", and in particular a sp
 
 ####  0012 Have you named a computer?
 
+Most personal computers of the early 90's ran single user, non-networked OSes like DOS or Windows 3.0, which didn't even have the concept of a host name.
+
+Running an OS you _could_ name on your own computer or managing a corporate/university network definitely could raise your hacker cred much more than in the age when even cellphones run UNIX-like OSes with hostnames.
+
 ####  0013 Do you complain when a "feature" you use gets fixed?
 
 A precursor to [XKCD 1172](https://xkcd.com/1172/).
@@ -172,6 +176,10 @@ Most operating systems only provide a way to run a single, entire program at onc
 
 ####  0033 Have you ever digitized a picture?
 
+Image scanners had existed for a long time (famous [Lenna](https://en.wikipedia.org/wiki/Lenna) image is from 1973), but when the test was written, easy to use flatbed scanners weren't common or affordable.
+
+To answer yes one would have to either have access to what was specialist hardware, or try to get a reasonable result with a hand scanner.
+
 ####  0034 Did you ever forget to mount a scratch monkey?
 
 A "scratch pad" is a notepad used for unimportant notes, a "scratch disk" is a storage device containing no important data; the idea is that if you're about to do something that might damage important data, you unmount the important disk and mount a scratch disk so that if something does go wrong, nothing of value is lost.
@@ -236,9 +244,9 @@ The music in this case is not a metaphor: it's literal music. Devices like dot p
 
 Doing so required not only a pretty good understanding of electronics, programming and music, but also quite a fair deal of creativity. Printer drivers, naturally, do not natively support making printers sing, and indeed some of the sounds occur when the hardware is pushed beyond its safe (or standard) operational parameters. Consequently, creating these sounds sometimes required careful programming and a lot of trial-and-error.
 
-####  0044 Do you have a Snoopy calendar?
+####  0044 Do you have a Snoopy calendar? 0045 ... Is it out-of-date?
 
-####  0045 ... Is it out-of-date?
+Probably a reference to [Real Programmers Don't Use Pascal](https://web.mit.edu/humor/Computers/real.programmers) and an actual [Snoopy calendar generator](https://gunkies.org/wiki/Snoopy_Calendar) in Fortran.
 
 ####  0046 Do you have a line printer picture of...
 
@@ -334,6 +342,11 @@ with which it shares no code.
 
 ####  0059 ... Xedit (in VM/CMS)?
 
+X in _that_ Xedit has nothing to do with X11, and CMS was not capable of graphics anyway.
+
+[The Hessling Editor](http://hessling-editor.sourceforge.net/) is a modern, cross-platform implementation.
+It has a graphical version for X11 too.
+
 ####  005A ... SOS?
 
 ####  005B ... EDT?
@@ -344,6 +357,9 @@ with which it shares no code.
 
 ## Have you ever programmed in
 ####  005E ... the X windowing system?
+
+No, using GTK/Qt/Motif doesn't count, they hide all the fun of interfacing with X from you. To answer yes, try using Xt and xlib directly.
+At the very least, try [Xaw](https://en.wikipedia.org/wiki/X_Athena_Widgets).
 
 ####  005F ... CICS?
 
@@ -399,6 +415,10 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 ####  0073 Have you ever received a case of beer with your computer?
 
 ####  0074 Does your computer come in 'designer' colors?
+
+Silicon Graphics was (in)famous for making [brightly colored workstations](https://web.archive.org/web/20040701221013/http://sgi.com/workstations/) in the age of beige and black boxes.
+
+They were, however, so powerful for the time that no one could mock them for it.
 
 ####  0075 Ever interrupted a UPS?
 
@@ -491,6 +511,8 @@ Many big iron machines such as DEC PDP-10 came with a micro-assembler and the mi
 A [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) is a mathematical model of computation described by Alan Turing, which he used to explore what kinds of things could possibly be computed, given infinite time and resources.
 
 You can't write a program for a Turing machine the same way you could write a program for a real machine (for one thing, it doesn't have "instructions" as such, just a frustratingly large set of arbitrary "states"), but it's instructive to think about how a Turing machine might go about simple tasks like adding numbers.
+
+Programming in [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) is the closest you can get. For another theoretical model of computation, the [combinatory logic](https://en.wikipedia.org/wiki/Combinatory_logic), try [Unlambda](http://www.madore.org/~david/programs/unlambda/).
 
 ####  0093 Can you convert postfix to prefix in your head?
 
@@ -589,6 +611,8 @@ A punched card with every hole punched. Such cards would sometimes cause the rea
 
 ####  00B2 Do you have a copy of the Hacker's dictionary?
 
+A dead tree edition of an outdated version of the [Jargon File](http://www.catb.org/jargon/).
+
 ####  00B3 ... Did you contribute to it?
 
 ####  00B4 Do you have a flowchart template?
@@ -615,11 +639,17 @@ A stencil for quckly drawing flowchart shaped on paper. Like [this](http://ferre
 
 ####  00BD ... a minicomputer?
 
+At the time it meant a formfactor and performance class similar to VAX.
+
 ####  00BE ... a mainframe?
+
+Follow this simple [guide](https://blog.mainframe.dev/2019/05/buying-ibm-mainframe.html) to answer yes.
 
 ####  00BF ... a supercomputer?
 
 ####  00C0 ... a hypercube?
+
+This may be a trap question since you cannot actually own a four-dimensional object, but many supercomputers like the [Connection Machine](https://en.wikipedia.org/wiki/Connection_Machine) use a hypercube architecture, that is, consist of full mesh cells connected to one other.
 
 ####  00C1 ... a printer?
 
@@ -1018,9 +1048,9 @@ the disk itself while you were cutting out the new notch...
 
 ####  016B ... Can you recite all the errors in it?
 
-####  016C Have you written a Sendmail configuration file?
+####  016C Have you written a Sendmail configuration file? 016D ... Does it work?
 
-####  016D ... Does it work?
+Sendmail was infamous for the complexity of its configuration file format. It's complex enough to be [accidentally Turing-complete](http://okmij.org/ftp/Computation/index.html#sendmail-Turing).
 
 ####  016E ... Do you mumble "defocus" in your sleep?
 
