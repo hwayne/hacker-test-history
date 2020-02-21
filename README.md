@@ -466,6 +466,8 @@ Needless to say, engaging the brake while the drum was spinning would be _bad id
 
 It may sound funny now, but back in the days hardware wasn't as smart and it was possible to physically damage certain CRT displays by switching them into unusual modes, for example.
 
+See also question 00A5 (HCF).
+
 ####  008D Ever tried to improve your score on the Hacker Test?
 
 ####  008E Do you take listings with you to lunch? (008F ... To bed?)
@@ -1159,6 +1161,8 @@ Also known as DOS/360 at some point. A mainframe OS for people who couldn't affo
 ####  01AC Do you use the "P convention"?
 
 Common Lisp and some other languages use the "p" suffix for predicates, e.g. `(numberp 42)`. Newer lisps like Scheme and Clojure usually go with more intuitive "?" instead, like `(string? "foo")`.
+
+According to the [jargon file](http://catb.org/jargon/html/p-convention.html), some Lisp programmers also used it in conversations.
 
 ####  01AD Do you automatically respond to any user question with RTFM?
 
