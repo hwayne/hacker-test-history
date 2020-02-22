@@ -71,6 +71,10 @@ From the Jargon File, [DWIM] stands for "Do What I Mean", and in particular a sp
 
 ####  0012 Have you named a computer?
 
+Most personal computers of the early 90's ran single user, non-networked OSes like DOS or Windows 3.0, which didn't even have the concept of a host name.
+
+Running an OS you _could_ name on your own computer or managing a corporate/university network definitely could raise your hacker cred much more than in the age when even cellphones run UNIX-like OSes with hostnames.
+
 ####  0013 Do you complain when a "feature" you use gets fixed?
 
 A precursor to [XKCD 1172](https://xkcd.com/1172/).
@@ -172,6 +176,10 @@ Most operating systems only provide a way to run a single, entire program at onc
 
 ####  0033 Have you ever digitized a picture?
 
+Image scanners had existed for a long time (famous [Lenna](https://en.wikipedia.org/wiki/Lenna) image is from 1973), but when the test was written, easy to use flatbed scanners weren't common or affordable.
+
+To answer yes one would have to either have access to what was specialist hardware, or try to get a reasonable result with a hand scanner.
+
 ####  0034 Did you ever forget to mount a scratch monkey?
 
 A "scratch pad" is a notepad used for unimportant notes, a "scratch disk" is a storage device containing no important data; the idea is that if you're about to do something that might damage important data, you unmount the important disk and mount a scratch disk so that if something does go wrong, nothing of value is lost.
@@ -214,6 +222,10 @@ The various tones required by DTMF signalling are all within the range of human 
 
 ####  003D Have you witnessed a disk crash?
 
+Old magnetic disk drives didn't have automatic protection against the head falling onto the platter.
+Such an event could leave a deep scratch on a platter and render it unusable. It also made a distinctive and scary sound.
+Also known as a [head crash](https://en.wikipedia.org/wiki/Head_crash).
+
 ####  003E Have you made a disk drive "walk"?
 
 Once upon a time, a "disk drive" was a unit about the size of a washing-machine. Like a washing machine, it involved spinning a heavy metal core at high speeds, and (like a washing machine) any imbalance of the payload could cause the unit to shake from side to side, and (under the right circumstances) rattle its way across the floor.
@@ -232,9 +244,9 @@ The music in this case is not a metaphor: it's literal music. Devices like dot p
 
 Doing so required not only a pretty good understanding of electronics, programming and music, but also quite a fair deal of creativity. Printer drivers, naturally, do not natively support making printers sing, and indeed some of the sounds occur when the hardware is pushed beyond its safe (or standard) operational parameters. Consequently, creating these sounds sometimes required careful programming and a lot of trial-and-error.
 
-####  0044 Do you have a Snoopy calendar?
+####  0044 Do you have a Snoopy calendar? 0045 ... Is it out-of-date?
 
-####  0045 ... Is it out-of-date?
+Probably a reference to [Real Programmers Don't Use Pascal](https://web.mit.edu/humor/Computers/real.programmers) and an actual [Snoopy calendar generator](https://gunkies.org/wiki/Snoopy_Calendar) in Fortran.
 
 ####  0046 Do you have a line printer picture of...
 
@@ -311,6 +323,8 @@ with which it shares no code.
 
 ####  0051 ... SNA
 
+[Systems Network Architecture](https://en.wikipedia.org/wiki/IBM_Systems_Network_Architecture), a proprietary protocol stack from the pre-Internet era.
+
 ####  0052 ... Spool
 
 ####  0053 ... TCP/IP
@@ -328,6 +342,11 @@ with which it shares no code.
 
 ####  0059 ... Xedit (in VM/CMS)?
 
+X in _that_ Xedit has nothing to do with X11, and CMS was not capable of graphics anyway.
+
+[The Hessling Editor](http://hessling-editor.sourceforge.net/) is a modern, cross-platform implementation.
+It has a graphical version for X11 too.
+
 ####  005A ... SOS?
 
 ####  005B ... EDT?
@@ -339,7 +358,12 @@ with which it shares no code.
 ## Have you ever programmed in
 ####  005E ... the X windowing system?
 
+No, using GTK/Qt/Motif doesn't count, they hide all the fun of interfacing with X from you. To answer yes, try using Xt and xlib directly.
+At the very least, try [Xaw](https://en.wikipedia.org/wiki/X_Athena_Widgets).
+
 ####  005F ... CICS?
+
+[CICS](https://www.ibm.com/it-infrastructure/z/cics) is a transaction processing framework for IBM mainframes.
 
 ####  0060 Have you ever received a Fax or a photocopy of a floppy?
 
@@ -391,6 +415,10 @@ In practice, this was enough of a problem that IBM sold [card sorters](http://ww
 ####  0073 Have you ever received a case of beer with your computer?
 
 ####  0074 Does your computer come in 'designer' colors?
+
+Silicon Graphics was (in)famous for making [brightly colored workstations](https://web.archive.org/web/20040701221013/http://sgi.com/workstations/) in the age of beige and black boxes.
+
+They were, however, so powerful for the time that no one could mock them for it.
 
 ####  0075 Ever interrupted a UPS?
 
@@ -456,6 +484,10 @@ Needless to say, engaging the brake while the drum was spinning would be _bad id
 
 ####  008C Ever physically destroy equipment from software?
 
+It may sound funny now, but back in the days hardware wasn't as smart and it was possible to physically damage certain CRT displays by switching them into unusual modes, for example.
+
+See also question 00A5 (HCF).
+
 ####  008D Ever tried to improve your score on the Hacker Test?
 
 ####  008E Do you take listings with you to lunch? (008F ... To bed?)
@@ -470,6 +502,8 @@ The instruction sets for the very first CPUs directly mapped onto the functional
 
 Because microcode is so fundamental to a CPU's operation, it is very well tested by the manufacturer, and any errors tend to show up immediately so they are fixed quickly. That said, microcode bugs are not unheard of.
 
+Many big iron machines such as DEC PDP-10 came with a micro-assembler and the microcode source, so patching bugs and adding new instructions wasn't unheard of either.
+
 ####  0091 ... around a microcode bug?
 
 ####  0092 Can you program a Turing machine?
@@ -477,6 +511,8 @@ Because microcode is so fundamental to a CPU's operation, it is very well tested
 A [Turing machine](https://en.wikipedia.org/wiki/Turing_machine) is a mathematical model of computation described by Alan Turing, which he used to explore what kinds of things could possibly be computed, given infinite time and resources.
 
 You can't write a program for a Turing machine the same way you could write a program for a real machine (for one thing, it doesn't have "instructions" as such, just a frustratingly large set of arbitrary "states"), but it's instructive to think about how a Turing machine might go about simple tasks like adding numbers.
+
+Programming in [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) is the closest you can get. For another theoretical model of computation, the [combinatory logic](https://en.wikipedia.org/wiki/Combinatory_logic), try [Unlambda](http://www.madore.org/~david/programs/unlambda/).
 
 ####  0093 Can you convert postfix to prefix in your head?
 
@@ -506,6 +542,8 @@ Given a Turing machine (that is, some kind of program) and an input for that pro
 
 As it turns out, Turing proved that it's not possible to solve the Halting problem, so anyone who answers "yes" to question 0097 will answer "no" to question 0098... unless they're lying.
 
+That said, solving the halting problem for a _specific program_ or class of programs rather than an arbitrary program is possible and may be necessary to prove that it always finishes in finite time (e.g. that a mission critical system doesn't hang).
+
 ####  0099 Ever deadlock trying eating spaghetti?
 
 See question 0096.
@@ -528,6 +566,10 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00A1 Ever speed up a system by removing a jumper?
 
+Before hardware auto-discovery (ala Plug'n'Play) was common, users often had to use [jumpers](https://en.wikipedia.org/wiki/Jumper_(computing)) to configure their mainboards, disk drives etc. to use specific interrupts, modes and so on.
+
+Most of the time wrong arrangement of jumpers simply rendered a peripheral or the whole system unusable rather than just slow though.
+
 ## Do you know...
 ####  00A2 Do you know who wrote Rogue?
 
@@ -537,11 +579,15 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00A5 Do you know what HCF means?
 
+[Halt and Catch Fire](http://www.catb.org/jargon/html/H/HCF.html), a CPU instruction useful for question 008C.
+
 ####  00A6 ... Ever use it?
 
 ####  00A7 ... Intentionally?
 
 ####  00A8 Do you know what a lace card is?
+
+A punched card with every hole punched. Such cards would sometimes cause the reader to jam.
 
 ####  00A9 ... Ever make one?
 
@@ -565,9 +611,13 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00B2 Do you have a copy of the Hacker's dictionary?
 
+A dead tree edition of an outdated version of the [Jargon File](http://www.catb.org/jargon/).
+
 ####  00B3 ... Did you contribute to it?
 
 ####  00B4 Do you have a flowchart template?
+
+A stencil for quckly drawing flowchart shaped on paper. Like [this](http://ferretronix.com/march/ibm_publications/ibm_flowchart_template_1.jpg).
 
 ####  00B5 ... Is it unused?
 
@@ -589,11 +639,17 @@ A "deadlock" is when two or more actors are prevented from making progress becau
 
 ####  00BD ... a minicomputer?
 
+At the time it meant a formfactor and performance class similar to VAX.
+
 ####  00BE ... a mainframe?
+
+Follow this simple [guide](https://blog.mainframe.dev/2019/05/buying-ibm-mainframe.html) to answer yes.
 
 ####  00BF ... a supercomputer?
 
 ####  00C0 ... a hypercube?
+
+This may be a trap question since you cannot actually own a four-dimensional object, but many supercomputers like the [Connection Machine](https://en.wikipedia.org/wiki/Connection_Machine) use a hypercube architecture, that is, consist of full mesh cells connected to one other.
 
 ####  00C1 ... a printer?
 
@@ -808,9 +864,13 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 
 ####  0121 Do you understand 3270 data streams?
 
+IBM 3270 was a block-oriented rather than a character-oriented video terminal, much harder to communicate with than a VT100.
+
 ####  0122 Do you know what the VM privilege classes are?
 
 ####  0123 Have you IPLed an IBM off the tape drive?
+
+IPL = Initial Program Loader, the mainframe for a bootloader. You can experience it for yourself in the [Hercules](http://www.hercules-390.org/) emulator.
 
 ####  0124 ... off a card reader?
 
@@ -849,6 +909,8 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 
 ####  0135 ... Can you recite a Nicklaus Wirth joke?
 
+A well-known one: "you can call me by name, Niklaus Wirth, or by value, Nickels Worth".
+
 ####  0136 Do you know Algol-60?
 
 ####  0137 ... Algol-W?
@@ -856,6 +918,8 @@ By [1985](http://www.mkomo.com/cost-per-gigabyte) hard drives were under $100/mb
 ####  0138 ... Algol-68?
 
 ####  0139 ... Do you understand the Algol-68 report?
+
+Algol-68 is a vastly more complex language than the simple Algol-60. That report is a _long_ read.
 
 ####  013A ... Do you like two-level grammars?
 
@@ -984,9 +1048,9 @@ the disk itself while you were cutting out the new notch...
 
 ####  016B ... Can you recite all the errors in it?
 
-####  016C Have you written a Sendmail configuration file?
+####  016C Have you written a Sendmail configuration file? 016D ... Does it work?
 
-####  016D ... Does it work?
+Sendmail was infamous for the complexity of its configuration file format. It's complex enough to be [accidentally Turing-complete](http://okmij.org/ftp/Computation/index.html#sendmail-Turing).
 
 ####  016E ... Do you mumble "defocus" in your sleep?
 
@@ -1002,11 +1066,19 @@ the disk itself while you were cutting out the new notch...
 
 ####  0173 ... VM/CMS?
 
+Known as [z/VM](https://www.ibm.com/it-infrastructure/z/zvm) now. Originally it included the hypervisor (VM) and a small, single-user guest OS named CMS (Conversational Monitor System). A CMS virtual machine would be spawned for every user who logged in, much like Virtual Desktop Infrastructure solutions today.
+
 ####  0174 ... VMS?
+
+Known as OpenVMS now. A VAX version can run in the [SIMH](http://simh.trailing-edge.com/).
 
 ####  0175 ... MVS?
 
+Known as [z/OS](https://en.wikipedia.org/wiki/Z/OS) these days. MVS 3.8j is available free of charge and runs in Hercules.
+
 ####  0176 ... VSE?
+
+Also known as DOS/360 at some point. A mainframe OS for people who couldn't afford MVS. Still exists as [z/VSE](https://www.ibm.com/it-infrastructure/z/zvse).
 
 ####  0177 ... RSTS/E?
 
@@ -1117,6 +1189,10 @@ the disk itself while you were cutting out the new notch...
 ####  01AB ... "bletch"?
 
 ####  01AC Do you use the "P convention"?
+
+Common Lisp and some other languages use the "p" suffix for predicates, e.g. `(numberp 42)`. Newer lisps like Scheme and Clojure usually go with more intuitive "?" instead, like `(string? "foo")`.
+
+According to the [jargon file](http://catb.org/jargon/html/p-convention.html), some Lisp programmers also used it in conversations.
 
 ####  01AD Do you automatically respond to any user question with RTFM?
 
