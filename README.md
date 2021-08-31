@@ -311,7 +311,7 @@ security features, ITS was small, written in assembly, and was permissive
 to the point of anarchy.)
 
 ITS was never widely deployed, but many early hackers were ITS users and
-many ITS machines were connected to the early ARPANET and thus it left a
+four ITS machines were connected to the early ARPANET and thus it left a
 long shadow.  It was the birthplace of Emacs, Scheme, and device-independent
 terminal output, among many other innovations taken for granted today.
 
