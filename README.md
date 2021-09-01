@@ -8,6 +8,8 @@ If there's something you recognize, just make a pull request with the explanatio
 
 ####  0000 Have you ever used a computer?
 
+(As argued by Edsger Dijkstra, [numbering should start at 0](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html).)
+
 ####  0001 ... for more than 4 hours continuously?
 
 ####  0002 ... more than 8 hours?
@@ -32,6 +34,8 @@ Since paper is inexpensive and malleable, and the reading mechanism was usually 
 ####  0009 ... Missed your own wedding?
 
 ####  000A Have you ever programmed while intoxicated?
+
+This is `000A` and not `0010` because the numbering is in hexadecimal. Hexademical, or base 16, uses 0-9 and a-f as digits. As `16=2⁴`, you can represent an 8-bit byte as 2 hex numbers.
 
 ####  000B ... Did it make sense the next day?
 
