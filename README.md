@@ -1292,7 +1292,11 @@ According to the [jargon file](http://catb.org/jargon/html/p-convention.html), s
 
 ####  01DA Do you know Duff's device?
 
+In the C programming language, [Duff's device](https://en.wikipedia.org/wiki/Duff%27s_device) is a way of manually implementing loop unrolling by interleaving two syntactic constructs of C: the do-while loop and a switch statement. 
+
 ####  01DB Do you know Jensen's device?
+
+[Jensen's device](https://en.wikipedia.org/wiki/Jensen%27s_device) is a computer programming technique that exploits call by name (in ALGOL-60).
 
 ####  01DC Ever spend ten minutes trying to find a single-character error?
 
