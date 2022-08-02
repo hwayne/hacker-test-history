@@ -10,13 +10,7 @@ If there's something you recognize, just make a pull request with the explanatio
 
 (As argued by Edsger Dijkstra, [numbering should start at 0](https://www.cs.utexas.edu/users/EWD/transcriptions/EWD08xx/EWD831.html).)
 
-####  0001 ... for more than 4 hours continuously?
-
-####  0002 ... more than 8 hours?
-
-####  0003 ... more than 16 hours?
-
-####  0004 ... more than 32 hours?
+####  0001 ... for more than 4 hours continuously? 0002 ... more than 8 hours? 0003 ... more than 16 hours? 0004 ... more than 32 hours?
 
 ####  0005 Have you ever patched paper tape?
 
@@ -25,13 +19,7 @@ Paper tape, also called [punched tape](https://en.wikipedia.org/wiki/Punched_tap
 Since paper is inexpensive and malleable, and the reading mechanism was usually optic, it would be very easy to "patch" paper tape: one could either punch holes, or cover erroneously punched holes by gluing electric tape or pieces of paper on top of them. However, doing so was fairly tedious and error prone, and you had to find it easy to "read" and "write" binary. Furthermore, finding out exactly *which* bits to toggle in this manner usually meant being able to read machine code dumps of the code -- not an easy feat!
 
 
-####  0006 Have you ever missed a class while programming?
-
-####  0007 ... Missed an examination?
-
-####  0008 ... Missed a wedding?
-
-####  0009 ... Missed your own wedding?
+####  0006 Have you ever missed a class while programming? 0007 ... Missed an examination? 0008 ... Missed a wedding? 0009 ... Missed your own wedding?
 
 ####  000A Have you ever programmed while intoxicated?
 
@@ -91,9 +79,7 @@ A reference to [NetHack](https://www.nethack.org/), one of the most popular rogu
 
 ####  0016 Have you ever wanted to download pizza?
 
-####  0017 Have you ever invented a computer joke?
-
-####  0018 ... Did someone not 'get' it?
+####  0017 Have you ever invented a computer joke? 0018 ... Did someone not 'get' it?
 
 ####  0019 Can you recite Jabberwocky?  001A ... Backwards?
 
@@ -138,15 +124,9 @@ On a computer that can process at most 32 bits of data at a time, those 32 bits 
 
 If you want to work with numbers larger than maxint, one approach is to treat regular machine integers as "digits", store numbers as a sequence of those digits, and teach your computer how to add, subtract, multiply and divide those numbers using the traditional "longhand" algorithms. This is much, much slower than using your computer's normal arithmetic functions, but it means you can operate precisely on numbers as large as available memory.
 
-####  0027 Can you name powers of two up to 2**16 in arbitrary order?
+####  0027 Can you name powers of two up to `2**16` in arbitrary order? 0028 ... up to `2**32`? 0029 ... up to `2**64`?
 
-####  0028 ... up to 2**32?
-
-####  0029 ... up to 2**64?
-
-####  002A Can you read a punched card, looking at the holes?
-
-####  002B ... feeling the holes?
+####  002A Can you read a punched card, looking at the holes? 002B ... feeling the holes?
 
 ####  002C Have you ever patched binary code?
 
@@ -522,6 +502,8 @@ Programming in [Brainfuck](https://en.wikipedia.org/wiki/Brainfuck) is the close
 
 ####  0094 Can you convert hex to octal in your head?
 
+Hex is base 16, octal is base 8.
+
 ####  0095 Do you know how to use a Kleene star?
 
 In the pattern-matching syntax of regular expressions, the Kleene star means "zero or more of the preceeding item". For example, if the pattern `ab` matches the string "ab", then the pattern `ab*` would match the strings "a", "ab", "abb", "abbb", and so forth.
@@ -629,9 +611,7 @@ A stencil for quckly drawing flowchart shaped on paper. Like [this](http://ferre
 
 [fortune](https://en.wikipedia.org/wiki/Fortune_(Unix)) is a famous Unix passtime. When invoked, it would display various funny quotes from one of several files that shipped with it or were circulated in the hacker community. Particularly dedicated hackers would, of course, have such a file of their own.
 
-####  00B7 Do you have the Anarchist's Cookbook?
-
-####  00B8 ... Ever make anything from it?
+####  00B7 Do you have the Anarchist's Cookbook? 00B8 ... Ever make anything from it?
 
 ####  00B9 Do you own a modem?
 
@@ -675,11 +655,7 @@ Notably, many of these scientific calculators used [RPN notation](https://en.wik
 
 RPN did not become a tradition by accident or taste alone; the RPN model had a number of advantages relevant to early hardware, and implementing such a scheme in software was at the very least cleaner, if not easier. Programming languages like Lisp, Forth and PostScript used it extensively, too.
 
-####  00C7 Have you ever owned more than 1 computer?
-
-####  00C8 ... 4 computers?
-
-####  00C9 ... 16 computers?
+####  00C7 Have you ever owned more than 1 computer? 00C8 ... 4 computers? 00C9 ... 16 computers?
 
 ####  00CA Do you have a SLIP line?
 
@@ -713,13 +689,7 @@ RPN did not become a tradition by accident or taste alone; the RPN model had a n
 
 ####  00D9 ... Is it unlabelled?
 
-####  00DA Do you own more than 16 floppy disks?
-
-####  00DB ... 64 floppy disks?
-
-####  00DC ... 256 floppy disks?
-
-####  00DD ... 1024 floppy disks?
+####  00DA Do you own more than 16 floppy disks? 00DB ... 64 floppy disks? 00DC ... 256 floppy disks? 00DD ... 1024 floppy disks?
 
 ####  00DE Do you have any 8-inch disks?
 
@@ -881,13 +851,7 @@ IPL = Initial Program Loader, the mainframe for a bootloader. You can experience
 ####  0125 Can you sing something from the IBM Songbook?
 
 ## Languages
-####  0126 Do you know more than 4 programming languages?
-
-####  0127 ... 8 languages?
-
-####  0128 ... 16 languages?
-
-####  0129 ... 32 languages?
+####  0126 Do you know more than 4 programming languages? 0127 ... 8 languages? 0128 ... 16 languages? 0129 ... 32 languages?
 
 ####  012A Have you ever designed a programming language?
 
@@ -1141,11 +1105,7 @@ Also known as DOS/360 at some point. A mainframe OS for people who couldn't affo
 ####  0192 ... Intentionally?
 
 ## People
-####  0193 Do you know any people?
-
-####  0194 ... more than one?
-
-####  0195 ... more than two?
+####  0193 Do you know any people? 0194 ... more than one? 0195 ... more than two?
 
 ## Personal
 ####  0196 Are your shoelaces untied?
@@ -1298,15 +1258,7 @@ In the C programming language, [Duff's device](https://en.wikipedia.org/wiki/Duf
 
 [Jensen's device](https://en.wikipedia.org/wiki/Jensen%27s_device) is a computer programming technique that exploits call by name (in ALGOL-60).
 
-####  01DC Ever spend ten minutes trying to find a single-character error?
-
-####  01DD ... More than an hour?
-
-####  01DE ... More than a day?
-
-####  01DF ... More than a week?
-
-####  01E0 ... Did the first person you show it to find it immediately?
+####  01DC Ever spend ten minutes trying to find a single-character error? 01DD ... More than an hour? 01DE ... More than a day? 01DF ... More than a week? 01E0 ... Did the first person you show it to find it immediately?
 
 ## Unix
 ####  01E1 Can you use Berkeley Unix?
